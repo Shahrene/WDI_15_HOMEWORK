@@ -1,44 +1,73 @@
-html {
+* {
   box-sizing: border-box;
 }
+
 body {
+  background-image:url(../images/background.jpg);
   background-repeat: repeat-x;
   background-color: lightgrey;
   font-family: arial;
 }
+
 .container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
   margin: auto;
   width: 50%;
 }
-.logo {
-  margin: auto;
-  width: 40%
-}
-aside {
 
+main {
+  display: inline-block;
+  vertical-align: top;
+  background-color: white;
+  width: 65%;
+  padding: 10px;
 }
+
+aside {
+  background-color: white;
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  padding: 15px;
+}
+
 li {
   list-style-type: none;
-  text-decoration: none;
+  padding: 0;
 }
-section {
-background-color: white;
-padding: 26px;
+
+article {
+  padding: 15px;
 }
+
+article img {
+  width: 100%;
+}
+
+article footer {
+  border-top: 1px dotted black;
+  border-bottom: 1px solid black;
+}
+
 .ads {
-display: block;
+  display: block;
 }
+
 .ecard1 a {
   color: red;
   text-decoration: none;
-
 }
+
 .ecard2 a {
   color: red;
   text-decoration: none;
 }
-footer {
-  margin: auto;
-  width: 12%;
+.icons {
+  margin: 0 auto;
   padding: 15px;
 }
