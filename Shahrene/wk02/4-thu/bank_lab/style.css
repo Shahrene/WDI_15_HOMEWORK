@@ -1,19 +1,26 @@
+html {
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
+  width: 50%;
   background-color: skyblue;
+  padding: 40px;
 }
 
 h1 {
   font-family: 'Lucida Console', monospace;
   font-weight: bold;
-  font-size: 25px
+  font-size: 25px;
+  margin-left: 50px;
 }
 h2 {
   font-family: 'Lucida Console', monospace;
   font-weight: lighter;
   font-size: 20px;
   text-align: center;
-  margin-top: 0;
-
+  margin-top: -10px;
 }
 h3 {
   font-family: 'Lucida Console', monospace;
@@ -57,7 +64,7 @@ input {
   margin: 10px;
   height: 25px;
   font-family: 'Lucida', monospace;
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
 
 }
