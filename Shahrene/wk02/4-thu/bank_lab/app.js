@@ -21,19 +21,29 @@ saveBal.textContent = 0;
 
 var depositIntoSavings = function() {
   var balance = Number(saveBal.textContent) + Number(inputSave.value);
-  saveBal.textContent = balance;
+    saveBal.textContent = balance;
+  saveBackground();
 }
 depositBtn.addEventListener('click', depositIntoSavings);
 
 var withdrawSavings = function() {
-  var balance = ((Number(saveBal.textContent) - Number(inputSave.value)) >= 0)
-    saveBal.textContent = balance;
-    if (inputSave <= saveBal) {
-    } else {
-      console.log('Withdrawal amount exceeds balance');
+  var balance = ((Number(saveBal.textContent) - Number(inputSave.value)))
+    if (balance > -1) {
+      saveBal.textContent = balance;
+      } else {
+      alert('Withdrawal amount exceeds balance');
   }
+  saveBackground();
 }
 withdrBtn.addEventListener('click', withdrawSavings);
+
+var saveBackground = function() {
+  if (Number(document.querySelector('.saveBal').textContent) === 0) {
+    document.querySelector('.savingsColor').style.backgroundColor = "mistyrose";
+    } else {
+    document.querySelector('.savingsColor').style.backgroundColor = "white";
+  }
+}
 
 //Checking
 var inputCheck = document.querySelector('.inputCheck');
@@ -45,16 +55,26 @@ checkBal.textContent = 0;
 
 var depositIntoCheck = function() {
   var checkingBalance = Number(checkBal.textContent) + Number(inputCheck.value);
-  checkBal.textContent = checkingBalance;
+    checkBal.textContent = checkingBalance;
+  checkBackground ();
 }
 checkDepositBtn.addEventListener('click', depositIntoCheck);
 
 var withdrawChecking = function() {
-  var balance = Number(checkBal.textContent) - Number(inputCheck.value);
-    if (inputCheck <= checkBal) {
+  var balance = ((Number(checkBal.textContent) - Number(inputCheck.value)));
+    if (balance > -1) {
       checkBal.textContent = balance;
-    } else {
-      console.log('Withdrawal amount exceeds balance');
+      } else {
+      alert('Withdrawal amount exceeds balance');
     }
+    checkBackground();
   }
 checkWithdrBtn.addEventListener('click', withdrawChecking);
+
+var checkBackground = function() {
+  if (Number(document.querySelector('.checkBal').textContent) === 0) {
+    document.querySelector('.checkColor').style.backgroundColor = "mistyrose";
+    } else {
+    document.querySelector('.checkColor').style.backgroundColor = "white";
+  }
+}
