@@ -56,7 +56,7 @@ checkBal.textContent = 0;
 var depositIntoCheck = function() {
   var checkingBalance = Number(checkBal.textContent) + Number(inputCheck.value);
     checkBal.textContent = checkingBalance;
-  checkBackground ();
+  checkBackground();
 }
 checkDepositBtn.addEventListener('click', depositIntoCheck);
 
