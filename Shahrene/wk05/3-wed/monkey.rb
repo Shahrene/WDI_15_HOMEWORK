@@ -1,8 +1,6 @@
 
 
 class Monkey
-
-
     def initialize(name, species)
       @name = name
       @species = species
@@ -11,10 +9,9 @@ class Monkey
 
     def eat(food)
       @foods_eaten << food
-      #need to turn array results into string.
     end
 
     def introduce
-      puts "Hi my name is #{@name}. I am a #{@species} and I had #{@foods_eaten} for breakfast"
+      puts "Hi my name is #{@name}. I am a #{@species} and I had #{@foods_eaten.join ', and '} for breakfast"
     end
 end

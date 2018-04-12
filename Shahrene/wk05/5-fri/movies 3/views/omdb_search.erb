@@ -1,0 +1,9 @@
+
+
+<div class="search">
+
+  <% @search.each do |result| %>
+  <a href="<%= '/movie?name=' + result['Title'] %>"><%= result["Title"] + ' ' + result["Year"] %></a><br>
+  <% end %>
+
+</div>
