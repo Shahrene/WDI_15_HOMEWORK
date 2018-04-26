@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #e081b9;
+  font-family: 'Courier New', sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2em;
+  color: white;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.25em;
+  color: white;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: white
+}
+
+form {
+  width: 100%;
+  padding: 3em 0;
+}
+
+input {
+  text-align: center;
+  width: 60%;
+  height: 2em;
+  padding: 1em;
+  margin: 1em;
+  font-size: 2em;
+  border: 1px solid white;
+  border-radius: 4px;
+  box-shadow: 3px 3px 5px 0px rgba(8, 96, 140, 0.75);
+}
+
+button {
+  cursor: pointer;
+  font-size: 2em;
+  background-color: #1255c9;
+  color: #edf5e1;
+  font-size: 1.25em;
+  border: 1px solid #c2ccd1;
+  border-radius: 4px;
+  padding: 1em 2em;
+  box-shadow: 3px 3px 5px 0px rgba(8, 96, 140, 0.75);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #0e1a84;
+  color: #edf5e1;
+}
+
+.wrapper {
+  width: 70%;
+  padding: 30px;
+
+}
