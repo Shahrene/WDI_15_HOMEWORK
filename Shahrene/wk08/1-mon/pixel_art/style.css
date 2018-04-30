@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 2.5em;
+  padding-top: 1em;
+}
+
+h2 {
+  font-size: 1.25em;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+p {
+  font-size: 1.5em;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.color-div {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  background: white;
+  margin-top: 5%;
+
+}
+
+.wrapper {
+  display: flex;
+}
+
+form {
+ display: flex;
+}
+
+input {
+  text-align: center;
+  width: 50%;
+  height: 1em;
+  padding: 1em;
+  margin: 1em;
+  font-size: 1.5em;
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+
+button {
+  cursor: pointer;
+  padding: 1em;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 1em;
+  border-radius: 4px;
+}
+
+button:hover {
+  cursor: pointer;
+  color: lightgrey;
+}
