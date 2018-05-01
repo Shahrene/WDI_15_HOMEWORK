@@ -24,7 +24,7 @@ var showResults = function(res) {
 $searchBtn.on('click', function(event){
   event.preventDefault();
   $resultsDiv.empty();
-  //offset = 0;
+  offset = 0;
   //var Search = $queryInput.val()
   var options = {
     url: 'http://api.giphy.com/v1/gifs/search?q=' + $queryInput.val() + '&api_key=SAAu8RpcPU9qVHa6Wnp83mhFRq16r2dB&q=&limit=10&rating=G&lang=en&offset=' + offset

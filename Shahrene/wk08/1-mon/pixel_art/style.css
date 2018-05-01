@@ -39,6 +39,12 @@ p {
   display: flex;
 }
 
+.squares {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
 form {
  display: flex;
 }
@@ -66,4 +72,11 @@ button {
 button:hover {
   cursor: pointer;
   color: lightgrey;
+}
+
+.square {
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    margin: 2px;
 }

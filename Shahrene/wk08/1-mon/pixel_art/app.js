@@ -1,7 +1,8 @@
 
-$setColorBtn = $('.setColorBtn');
-$colorDiv = $('.color-div');
-$colorInput = $('.color-input');
+var $setColorBtn = $('.setColorBtn');
+var $colorDiv = $('.color-div');
+var $colorInput = $('.color-input');
+var $squares = $('.squares');
 
 $setColorBtn.on('click', function(event) {
   event.preventDefault();
@@ -15,3 +16,14 @@ $setColorBtn.on('click', function(event) {
 
   $colorDiv[0].style.backgroundColor = colorVal;
 })
+
+//create squares and append them to divs
+$(document).ready(function() {
+    for (var i = 0; i < 675; i++) {
+      var $div = $('<div>')
+      $div.addClass('square')
+      //.mouseover(changeColor)
+      $squares.append($div);
+    }
+
+  })
