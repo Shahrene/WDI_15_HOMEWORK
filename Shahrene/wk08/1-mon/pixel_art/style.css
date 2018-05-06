@@ -6,7 +6,7 @@ body {
   width: 60%;
   margin: 0 auto;
   display: flex;
-  align-items: center;
+  align-items: left;
   flex-direction: column;
 }
 
@@ -34,15 +34,10 @@ p {
   margin-top: 5%;
 
 }
-
-.wrapper {
-  display: flex;
-}
-
 .squares {
   display: flex;
   flex-wrap: wrap;
-
+  width: 75%;
 }
 
 form {
@@ -79,4 +74,5 @@ button:hover {
     width: 20px;
     height: 20px;
     margin: 2px;
+    cursor: pointer;
 }
