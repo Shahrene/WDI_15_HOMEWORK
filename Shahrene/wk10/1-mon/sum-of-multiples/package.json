@@ -1,0 +1,11 @@
+{
+  "name": "sum-of-multiples",
+  "version": "1.0.0",
+  "description": "If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.",
+  "main": "sumOfMultiples.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
