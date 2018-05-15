@@ -11,4 +11,4 @@ var sumOfMultiples = function (num) {
     console.log(total);
 }
 
-sumOfMultiples(10);
+sumOfMultiples(process.argv);
