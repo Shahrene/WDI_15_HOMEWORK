@@ -3,27 +3,28 @@
 }
 
 body {
-  width: 45%;
+  width: 55%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'Tahoma', sans-serif;
+  font-family: 'Kirang Haerang', cursive;
 }
 
 h1 {
-  font-size: 2em;
-  color: white;
+  font-size: 4.5em;
+  color: black;
   font-weight: bold;
-  margin-left: 1.1em;
-  margin-top: 10%;
+  margin-top: 5%;
+  text-shadow: 2px 2px #ffffff;
 
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 3em;
   color: white;
   margin-left: 1.4em;
+  font-weight: bold;
 }
 
 button {
@@ -49,4 +50,5 @@ button:hover {
 
 .compliment {
   margin-top: 5%;
+  text-align: center;
 }

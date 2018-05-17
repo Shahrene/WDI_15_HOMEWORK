@@ -4,17 +4,18 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kirang+Haerang" rel="stylesheet">
   </head>
   <body style="background-color: <%= randColor %>">
 
-    <h1>Emergency Compliment</h1>
+    <h1>Awkward Compliment Generator</h1>
 
     <form action="/" >
       <button> Compliment Me </button>
     </form>
 
-    <div class="compliment">
-      <h3><%= randCompliment %></h3>
+    <div class="compliment" >
+      <h3 style="color: <%= randText %>"> <%= randCompliment %></h3>
     </div>
 
 
